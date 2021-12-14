@@ -1,0 +1,27 @@
+/* 
+    creating fixed positioned footer 
+    by using z-index on project
+*/
+
+/* position and styling */
+footer{
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    top:0;
+    left:0;
+    
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text box */
+footer div{
+    width: 600px;
+    text-align: center;
+}

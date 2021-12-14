@@ -1,0 +1,32 @@
+/*setting up a grid for projects*/
+
+
+/* main grid container */
+.projects-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/*top and bottom*/
+.top-projects-row, .bottom-projects-row{
+    display: flex;
+}
+
+/* each container(box) */
+.project-wrapper{
+    width: 33vw;
+    height: 50vh;
+
+    border:1px solid red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SETUP DONE */
+/* ---------- */
+

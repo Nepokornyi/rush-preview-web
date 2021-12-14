@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    overflow-x: hidden;
+}
+*{
+    color:white;
+}
+
+
+/* global section */
+section{
+    position: relative;
+    z-index: 2;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color:slategrey;
+    border-bottom: 1px solid red;
+    
+
+} 
+
+
+.footer-magic{
+    height: 100vh;
+    opacity: 0;
+}
+
