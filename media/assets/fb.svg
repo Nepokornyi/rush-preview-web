@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 18.000002 18"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="fb.svg"
+   width="18.000002"
+   height="18"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.2696505"
+     inkscape:cx="267.79023"
+     inkscape:cy="265.82119"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#f7f7f7;}</style>
+  </defs>
+  <g
+     id="Layer_2"
+     data-name="Layer 2"
+     transform="matrix(0.03360557,0,0,0.03380755,-1.0031451e-4,-1.5307049e-4)">
+    <g
+       id="icons">
+      <path
+         id="fb"
+         class="cls-1"
+         d="M 304.53,532.43 V 339 h 68.8 c 3.65,-23.49 7.23,-46.59 10.95,-70.54 h -80.21 c 0,-11.92 -0.37,-23.1 0.11,-34.25 0.42,-9.76 0.82,-19.7 2.95,-29.17 4.9,-21.7 16.63,-30.42 38.77,-30.43 h 38.5 v -61.48 c -5.46,-0.62 -11.06,-1.47 -16.69,-1.85 -21.84,-1.45 -43.74,-3.22 -65.45,1 -39.55,7.63 -64.12,32.8 -71.11,73.58 -2.27,13.22 -2.79,26.81 -3.32,40.26 -0.54,13.66 -0.12,27.36 -0.12,42 h -65.9 v 70.56 h 65.43 v 192.8 C 122.15,519 7.54,425.14 0.35,281.27 -7.16,131 108.19,7.89 252.8,0.38 401.12,-7.33 526.74,104.62 535.16,251.26 543.8,401.86 431.67,516.43 304.53,532.43 Z" />
+    </g>
+  </g>
+</svg>
