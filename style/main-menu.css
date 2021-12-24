@@ -1,3 +1,96 @@
+    /* Transition */
+
+    #main-menu-transition-in, #main-menu-transition-out{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: red;
+
+        z-index: 6;
+    }
+    #main-menu-transition-in{
+        top:0px;
+        left: -100vw;
+    }
+    #main-menu-transition-out{
+        top:0px;
+        right:-100vw;
+    }
+
+    .slide-in{
+        animation: slide-in 2s forwards;
+    }
+    .slide-out{
+        animation: slide-out 2s forwards;
+    }
+
+    /* Transition Keyframes */
+
+    /* Into Menu */
+    @keyframes slide-in {
+        50%{
+            left:0px;
+        }
+        100%{
+            left:100vw;
+        }
+    }
+
+    /* Out of Menu */
+    @keyframes slide-out {
+        50%{
+            right:0px;
+        }
+        100%{
+            right:100vw;
+        }
+    }
+
+
+
+/* ------- */
+/* Main Menu Styling */
+/* ------- */
 .main-menu{
-    display:none;
+    position: absolute;
+    width: 100vw;
+    height: 99.9vh;
+    
+    background-color: black;
+
+    overflow-y: hidden;
+    
 }
+
+/* Menu Box */
+.hidden-menu-container{
+    width: 100vw;
+    height: 100vh;
+
+    overflow-y: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .hidden-menu-container div{
+        width: 80vw;
+        height: 75vh;
+        overflow-y: auto;
+    }
+
+
+
+.main-menu ul{
+    list-style-type: none;
+    font-size: 100px;
+}
+.main-menu li{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color:black;
+}
+.main-menu li:hover{
+    color:white;
+}
+

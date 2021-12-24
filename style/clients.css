@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .top-logo-row, .middle-logo-row, .bottom-logo-row{
@@ -40,12 +41,26 @@
 /*each logo pictures boxes */
 
 .clients-logo-wrapper{
-    width: 10vw;
-    height: 10vh;
+    width: 15vw;
+    height: 15vh;
 
     border:1px solid red;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* SETUP DONE */
+/* ---------- */
+
+
+/* Logo Hover effect */
+.client-figure img{
+    transition-duration: 0.5s;
+}
+
+.client-figure img:hover{
+    opacity:0.65;
+    transition-duration: 0.5s;
 }

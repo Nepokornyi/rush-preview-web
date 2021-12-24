@@ -30,3 +30,17 @@
 /* SETUP DONE */
 /* ---------- */
 
+
+
+/* Img Hover Effect */
+
+.project-figure img{
+    transform: translateY(0px);
+    transition: 0.3s;
+}
+
+.project-figure img:hover{
+    transform: translateY(-10px);
+    transition: 0.25s ease-in;
+}
+

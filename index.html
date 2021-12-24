@@ -20,15 +20,35 @@
 </head>
 <body>
 
-    <!-- fixed top menu -->
-    <header>
+
+    <!-- SlideTransition -->
+    <div id="main-menu-transition-in"></div>
+    <div id="main-menu-transition-out"></div>
+
+    <!-- main-menu (hidden) -->
+    <section class="main-menu">
+
         <div class='header-menu'>
             <div class="header-cases-wrapper">
             <p>All Cases</p>
-            <a href=""><li style="list-style-image: url('./media/assets/all_cases_button.svg');"></li></a>
+            <a id="slide-out-button"><li style="list-style-image: url('./media/assets/all_cases_button.svg');"></li></a>
             </div>
         </div>
-    </header>
+        
+        <div class="hidden-menu-container">
+            <div>
+                <nav>
+                    <ul>
+                        <li>First Project</li>
+                        <li>Second Project</li>
+                        <li>Third Project</li>
+                        <li>One More Project</li>
+                        <li>Perfect Project</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
 
     <!-- side bar -->
     <div class="side-menu-container">
@@ -51,26 +71,27 @@
         </aside>
     </div>
 
-    <!-- main-menu (hidden) -->
-    <div class="main-menu">
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- prev/next buttons -->
-
-    <div class="intro-buttons">
-        <p>PREV</p>
-        <p>NEXT</p>
-    </div>
-
     
-    <main>
+    <main id="main">
+    <!-- fixed top menu -->
+        <header>
+            <div class='header-menu'>
+                <div class="header-cases-wrapper">
+                <p>All Cases</p>
+                <a id="slide-in-button"><li style="list-style-image: url('./media/assets/all_cases_button.svg');"></li></a>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- prev/next buttons -->
+
+        <div class="intro-buttons">
+            <p>PREV</p>
+            <p>NEXT</p>
+        </div>
+
+
         <!-- intro content -->
         <section id="video">
             <div class="video-container">
@@ -94,15 +115,48 @@
         <section id="projects">
             <div class="projects-container">
                 <div class="top-projects-row">
-                    <div class="project-wrapper">Picture with link</div>
-                    <div class="project-wrapper">Picture with link</div> 
-                    <div class="project-wrapper">Picture with link</div>
+
+                    <div class="project-wrapper">
+                        <figure class="project-figure">
+                            <img src="https://picsum.photos/220/320" alt="">
+                            <figcaption>Project 1</figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-wrapper">
+                        <figure class="project-figure">
+                            <img src="https://picsum.photos/210/310" alt="">
+                            <figcaption>Project 2</figcaption>
+                        </figure>
+                    </div> 
+                    <div class="project-wrapper">
+                        <figure class="project-figure">
+                            <img src="https://picsum.photos/190/290" alt="">
+                            <figcaption>Project 3</figcaption>
+                        </figure>
+                    </div>
+
                 </div>
                 <div class="bottom-projects-row">
-                    <div class="project-wrapper">Picture with link</div>
-                    <div class="project-wrapper">Picture with link</div>
-                    <div class="project-wrapper">Picture with link</div>
+                    <div class="project-wrapper">
+                        <figure class="project-figure">
+                            <img src="https://picsum.photos/200/300" alt="">
+                            <figcaption>Project 4</figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-wrapper">
+                        <figure class="project-figure">
+                            <img src="https://picsum.photos/175/275" alt="">
+                            <figcaption>Project 5</figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-wrapper">
+                        <figure class="project-figure">
+                            <img src="https://picsum.photos/150/250" alt="">
+                            <figcaption>Project 6</figcaption>
+                        </figure>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -115,19 +169,57 @@
                 </div>
                 <div class="right-clients">
                     <div class="top-logo-row">
-                        <div class="clients-logo-wrapper">Logo</div>
-                        <div class="clients-logo-wrapper">Logo</div>
-                        <div class="clients-logo-wrapper">Logo</div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/210/100" alt="">
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/209/99" alt="">
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/211/101" alt="">
+                            </figure>
+                        </div>
                     </div>
+
                     <div class="middle-logo-row">
-                        <div class="clients-logo-wrapper">Logo</div>
-                        <div class="clients-logo-wrapper">Logo</div>
-                        <div class="clients-logo-wrapper">Logo</div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/211/102" alt="">
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/210/103" alt="">
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/210/104" alt="">
+                            </figure>
+                        </div>
                     </div>
+
                     <div class="bottom-logo-row">
-                        <div class="clients-logo-wrapper">Logo</div>
-                        <div class="clients-logo-wrapper">Logo</div>
-                        <div class="clients-logo-wrapper">Logo</div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/212/100" alt="">
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/213/100" alt="">
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <img src="https://picsum.photos/214/100" alt="">
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,5 +247,7 @@
             Necessitatibus, aut, molestias maxime perferendis explicabo repellendus commodi quaerat, totam dolorem similique facere hic nemo rerum esse. Consequuntur quidem amet sit, ipsam provident sapiente minima temporibus eveniet. Expedita, quis soluta.</p>   
         </div>
     </footer>
+
+    <script src='./script/slide-anim.js'></script>
 </body>
 </html>
