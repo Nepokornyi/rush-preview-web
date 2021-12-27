@@ -42,3 +42,58 @@ buttonIn.addEventListener('click', transitionIn);
 buttonOut.addEventListener('click', transitionOut);
 
 // ------------
+
+
+// reveal animation
+
+function reveal (){
+    let reveals = document.querySelectorAll('.reveal');
+    console.log(reveals.length);
+
+    for (let i = 0; i < reveals.length; i++) {
+        console.log('running cycle ' + i);
+        
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 150;
+        
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+            console.log('adding class');
+        }
+        else{
+            reveals[i].classList.remove('active');
+            console.log('removing class');
+        }
+    }
+}
+
+    // listener
+window.addEventListener('scroll', reveal);
+// ------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

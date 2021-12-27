@@ -27,3 +27,16 @@ section{
     opacity: 0;
 }
 
+/* Reveal Effect */
+
+.reveal{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s ease;
+}
+
+.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
