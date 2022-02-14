@@ -1,0 +1,89 @@
+/* 
+    creating fixed positioned footer 
+    by using z-index on project
+*/
+
+
+.footer-invisible{
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* position and styling */
+footer{
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    bottom:0;
+    left:0;
+    
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .contact-bg{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../media/assets/contact/contact-bg.png);
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+/* form - contacts */
+
+.contact-up-container{
+    width: 100vw;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+    .contact-up{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+        .contact-up h1{
+            margin:0px;
+        }
+        .contact-up span{
+            width: 127px;
+            padding-top: 40px; 
+            border-bottom:2px solid var(--special-red);
+        }
+
+
+.contact-down-container{
+    width: 100vw;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+    .contact-down{
+        width: 100vw;
+        height: 30vh;
+    }
+    .contact-down ul{
+        list-style: none;
+        display: flex;
+    }
+    .contact-down li{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-down li:nth-child(1){margin-left: 7vw;}
+    .contact-down li:nth-child(2){margin-left: 15vw;}
+    .contact-down li:nth-child(3){margin-left: 15vw;}

@@ -1,11 +1,62 @@
+
+// ------------
+// hamburger animation
+const playHamburger   = document.getElementById('start-hamburger');
+
+const burgerContainer = document.getElementById('hamburger-anim');
+const burgerAnim      = bodymovin.loadAnimation({
+    wrapper: burgerContainer,
+    animType: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'https://assets10.lottiefiles.com/packages/lf20_b0iaodyg.json',
+
+});
+
+playHamburger.addEventListener('click', () =>{
+    burgerContainer.classList.remove('hide');
+    playHamburger.classList.add('hide');
+    burgerAnim.goToAndPlay(0, true);
+});
+
+burgerAnim.addEventListener('complete', () =>{
+    burgerContainer.classList.add('hide');
+    playHamburger.classList.remove('hide');
+});
+// ------------
+
+
+// ------------
+// equalizer animation
+
+// const playEqualizer   = document.getElementById('start-hamburger');
+
+const equalizerContainer = document.getElementById('equalizer-anim');
+const equalizerAnim      = bodymovin.loadAnimation({
+    wrapper: equalizerContainer,
+    animType: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://assets9.lottiefiles.com/packages/lf20_wc7uht2d.json',
+
+});
+
+// playEqualizer.addEventListener('click', () =>{
+//     equalizerContainer.classList.remove('hide');
+//     equalizerAnim.goToAndPlay(0, true);
+// });
+
+
+// ------------
+
 // ------------
 // slide animation
 
-let buttonIn = document.getElementById('slide-in-button');
-let buttonOut = document.getElementById('slide-out-button');
-let slideScreenIn = document.getElementById('main-menu-transition-in');
-let slideScreenOut = document.getElementById('main-menu-transition-out');
-let main = document.getElementById('main');
+const buttonIn       = document.getElementById('slide-in-button');
+const buttonOut      = document.getElementById('slide-out-button');
+const slideScreenIn  = document.getElementById('main-menu-transition-in');
+const slideScreenOut = document.getElementById('main-menu-transition-out');
+const main           = document.getElementById('main');
 
 // add transition animation and remove so you can repeat
 
@@ -15,11 +66,11 @@ function transitionIn(){
     
     setTimeout(function(){
         slideScreenIn.classList.remove('slide-in');
-    },2000);
+    },1500);
 
     setTimeout(function(){
         main.style.display = 'none';
-    },1000);
+    },750);
 }
     //---------
 
@@ -29,11 +80,11 @@ function transitionOut(){
 
     setTimeout(function(){
         slideScreenOut.classList.remove('slide-out')
-    },2000);
+    },1500);
 
     setTimeout(function(){
         main.style.display = 'initial';
-    },1000);
+    },750);
 
 }
     //---------
@@ -44,26 +95,26 @@ buttonOut.addEventListener('click', transitionOut);
 // ------------
 
 
+// ------------
 // reveal animation
 
 function reveal (){
-    let reveals = document.querySelectorAll('.reveal');
-    console.log(reveals.length);
+    const reveals = document.querySelectorAll('.reveal');
 
     for (let i = 0; i < reveals.length; i++) {
-        console.log('running cycle ' + i);
+
         
         let windowHeight = window.innerHeight;
-        let revealTop = reveals[i].getBoundingClientRect().top;
-        let revealPoint = 150;
+        let revealTop    = reveals[i].getBoundingClientRect().top;
+        let revealPoint  = 150;
         
         if (revealTop < windowHeight - revealPoint) {
             reveals[i].classList.add('active');
-            console.log('adding class');
+
         }
         else{
             reveals[i].classList.remove('active');
-            console.log('removing class');
+
         }
     }
 }
@@ -73,7 +124,7 @@ window.addEventListener('scroll', reveal);
 // ------------
 
 
-
+// ------------
 
 
 

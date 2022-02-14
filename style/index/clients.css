@@ -10,24 +10,26 @@
 
 /* Heading box */
 .left-clients{
-    width: 33vw;
+    width: 40vw;
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+    .left-clients h1{
+        padding-left: 70px;
+    }
 
 /* Logo box */
 .right-clients{
-    width: 66vw;
+    width: 60vw;
     height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .top-logo-row, .middle-logo-row, .bottom-logo-row{
@@ -42,10 +44,9 @@
 
 .clients-logo-wrapper{
     width: 15vw;
-    height: 15vh;
+    height: 30vh;
 
-    border:1px solid red;
-
+    border:1px solid var(--special-red);
     display: flex;
     align-items: center;
     justify-content: center;

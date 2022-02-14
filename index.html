@@ -7,15 +7,19 @@
     <title>ru.sh studio</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/index/main.css">
+    <link rel="stylesheet" href="./style/index/main-menu.css">
 
-    <link rel="stylesheet" href="./style/main-menu.css">
+    <link rel="stylesheet" href="./style/index/intro.css">
+    <link rel="stylesheet" href="./style/index/about.css">
+    <link rel="stylesheet" href="./style/index/projects.css">
+    <link rel="stylesheet" href="./style/index/clients.css">
+    <link rel="stylesheet" href="./style/index/footer.css">
 
-    <link rel="stylesheet" href="./style/intro.css">
-    <link rel="stylesheet" href="./style/about.css">
-    <link rel="stylesheet" href="./style/projects.css">
-    <link rel="stylesheet" href="./style/clients.css">
-    <link rel="stylesheet" href="./style/footer.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -54,11 +58,12 @@
     <div class="side-menu-container">
         <aside>
             <div class="logo">
-                <a href=""><img src="./media/assets/logo.svg" alt=""></a>
+                <a><img src="./media/assets/logo.svg" alt=""></a>
             </div>
 
             <div class="hamburger-menu">
-                <a href=""><img src="./media/assets/burger.svg" alt=""></a>
+                <a id="start-hamburger"><img src="./media/assets/burger.svg" alt=""></a>
+                <a><div class="hamburger-anim hide" id="hamburger-anim"></div></a>   
             </div>
 
             <div class="aside-links">                
@@ -67,6 +72,10 @@
                     <a href=""><li style="list-style-image: url('./media/assets/fb.svg');"></li></a>
                     <a href=""><li style="list-style-image: url('./media/assets/mail.svg');"></li></a>
                 </ul>
+            </div>
+
+            <div class="aside-equalizer">
+                <a><div class="equalizer-anim" id="equalizer-anim"></div></a>
             </div>
         </aside>
     </div>
@@ -77,7 +86,7 @@
         <header>
             <div class='header-menu'>
                 <div class="header-cases-wrapper">
-                <p>All Cases</p>
+                <p><strong>ПОРТФОЛИ<span class="highlight">О</span></strong></p>
                 <a id="slide-in-button"><li style="list-style-image: url('./media/assets/all_cases_button.svg');"></li></a>
                 </div>
             </div>
@@ -95,12 +104,16 @@
         <!-- intro content -->
         <section id="video">
             <div class="video-container">
-                <video src="./media/video/intro.mov" muted autoplay loop></video>
+                <!-- <video src="./media/video/intro.mov" muted autoplay loop></video> -->
+                <img src="./media/mainPage/bgImg/bg-img.png" alt="" class="bg-img">
             </div>
 
-            <div class="intro-heading">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem, ipsum dolor.</p>
+            <div class="intro-heading-container">
+                <div class="intro-heading">
+                    <h1>МЫ ЭТО СИНТЕЗ ДИНАМИКИ И ОСМЫСЛЕННОСТИ</h1>
+                    <p>Наши знания и опыт открывают для клиентов любые возможности</p>
+                    <p>в сфере контента и продвижения.</p>
+                </div>
             </div>
         </section>
     
@@ -120,25 +133,31 @@
 
                     <div class="project-wrapper">
                         <figure class="project-figure">
-                            <img src="https://picsum.photos/220/320" alt="">
-                            <figcaption>Project 1</figcaption>
+                            <img class="project-img" src="./media/assets/clients/bart-client.png" alt="">
+                            <figcaption><strong>BART BARBERSHO<span class="highlight">P</span></strong><br>
+                            <span class="project-tag">Brand, Promotion, Digital</span>
+                            </figcaption>
                         </figure>
                     </div>
                     <div class="project-wrapper">
                         <figure class="project-figure">
-                            <img src="https://picsum.photos/210/310" alt="">
-                            <figcaption>Project 2</figcaption>
+                            <img class="project-img" src="./media/assets/clients/dlnsk-client.png" alt="">
+                            <figcaption><strong>DLNSK SHO<span class="highlight">P</span></strong><br>
+                            <span class="project-tag">Digital, Promotion</span>
+                            </figcaption>
                         </figure>
                     </div> 
                     <div class="project-wrapper">
                         <figure class="project-figure">
-                            <img src="https://picsum.photos/190/290" alt="">
-                            <figcaption>Project 3</figcaption>
+                            <img class="project-img" src="./media/assets/clients/browbar-client.png" alt="">
+                            <figcaption><strong>THE BROW BA<span class="highlight">R</span></strong><br>
+                            <span class="project-tag">Digital</span>
+                            </figcaption>
                         </figure>
                     </div>
-
                 </div>
-                <div class="bottom-projects-row reveal">
+
+                <!-- <div class="bottom-projects-row reveal">
                     <div class="project-wrapper">
                         <figure class="project-figure">
                             <img src="https://picsum.photos/200/300" alt="">
@@ -159,7 +178,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </section>
 
 
@@ -167,28 +186,28 @@
         <section id="clients">
             <div class="client-container">
                 <div class ="left-clients reveal">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <h1>СОТРУДНИЧАЕМ С ТЕМИ, КТО ТАКЖЕ КАК И МЫ - ЗА КРЕАТИВНОСТЬ</h1>
                 </div>
                 <div class="right-clients">
                     <div class="top-logo-row reveal">
                         <div class="clients-logo-wrapper">
                             <figure class="client-figure">
-                                <img src="https://picsum.photos/210/100" alt="">
+                                <img src="https://picsum.photos/210/150" alt="">
                             </figure>
                         </div>
                         <div class="clients-logo-wrapper">
                             <figure class="client-figure">
-                                <img src="https://picsum.photos/209/99" alt="">
+                                <img src="https://picsum.photos/209/155" alt="">
                             </figure>
                         </div>
                         <div class="clients-logo-wrapper">
                             <figure class="client-figure">
-                                <img src="https://picsum.photos/211/101" alt="">
+                                <img src="https://picsum.photos/211/151" alt="">
                             </figure>
                         </div>
                     </div>
 
-                    <div class="middle-logo-row reveal">
+                    <!-- <div class="middle-logo-row reveal">
                         <div class="clients-logo-wrapper">
                             <figure class="client-figure">
                                 <img src="https://picsum.photos/211/102" alt="">
@@ -222,34 +241,50 @@
                                 <img src="https://picsum.photos/214/100" alt="">
                             </figure>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
 
         
         <!-- footer magic -->
-        <section class="footer-magic">
+        <section class="footer-invisible">
 
         </section>
     </main>
 
     <footer id="contact">
-        <div>
-            <h1>Footer Hello here</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam, consectetur, autem perferendis ducimus laboriosam repellat error, voluptatem optio expedita vitae provident id sapiente. Alias ea placeat doloribus ex commodi.
-            Maiores voluptas commodi dignissimos repellendus minus assumenda? Sapiente earum quam dolor placeat sint dicta ipsum quibusdam natus autem, hic ratione excepturi, saepe totam inventore explicabo tenetur reiciendis voluptas eum? Voluptatem!
-            Odit, nulla nam incidunt asperiores possimus blanditiis eum facilis assumenda ab consequuntur velit alias minima soluta placeat odio ipsam aperiam illum reprehenderit ratione voluptatibus. Fugit distinctio necessitatibus quisquam cupiditate fuga!
-            Provident, ipsum at sed accusantium quia ad quam doloribus necessitatibus qui animi repellat fuga vitae, repudiandae voluptatem, suscipit ipsa? Odio dolorum pariatur excepturi quos vero voluptatem doloribus voluptatum ad repellendus.
-            Perspiciatis dolore vero id. Amet odio quasi unde voluptas, cum culpa! Sit officia alias iusto asperiores, voluptatibus doloremque quibusdam culpa quo. Esse, deleniti? Aspernatur doloribus alias repudiandae facere! Molestiae, voluptate!
-            Repudiandae reprehenderit, voluptatem voluptates eligendi adipisci pariatur laborum repellat magni officiis porro, dolorem, aspernatur vero laboriosam assumenda enim voluptatibus nobis veniam quam! Natus reiciendis ab voluptatum, tenetur vitae iste deleniti?
-            Facere ex magni laboriosam omnis quos obcaecati velit sequi tenetur cupiditate? Optio hic ipsa alias inventore deserunt illo explicabo! Aperiam excepturi obcaecati optio ad dicta dolor exercitationem iure laborum saepe.
-            Consectetur suscipit nemo mollitia rem iure architecto quas? Facere saepe voluptatum illo, ipsa eum vero optio magnam ad quibusdam odit, laudantium est placeat quos quidem molestias? Sapiente non autem molestiae?
-            Nobis placeat perspiciatis consequuntur, saepe aliquid tempora inventore odit ratione necessitatibus ipsam! Facilis est quas animi, accusamus magni in optio recusandae debitis porro rerum possimus architecto commodi dolor aliquam veritatis.
-            Necessitatibus, aut, molestias maxime perferendis explicabo repellendus commodi quaerat, totam dolorem similique facere hic nemo rerum esse. Consequuntur quidem amet sit, ipsam provident sapiente minima temporibus eveniet. Expedita, quis soluta.</p>   
+        <div class="contact-bg">
+            <div class="contact-up-container">
+                <div class="contact-up">
+                    <h1>ХОТИТЕ УЗНАТЬ БОЛЬШЕ?</h2>
+                    <h1>СВЯЖИТЕСЬ С НАМИ!</h1>
+    
+                    <span>Напишите Нам</span>
+                </div>
+            </div>
+            <div class="contact-down-container">
+                <div class="contact-down">
+                    <ul>
+                        <li>
+                            <span><strong>АДРЕСС</strong></span>
+                            <span>Třebízského 9, 160 00 Vinohrady</span>
+                        </li>
+                        <li>
+                            <span><strong>ТЕЛЕФОН</strong></span>
+                            <span>+420 777 111 444</span>
+                        </li>
+                        <li>
+                            <span><strong>ПОЧТА</strong></span>
+                            <span>libofinspiration@gmail.com</span>
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src='./script/animations/animations.js'></script>
 
 </body>

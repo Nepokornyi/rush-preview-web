@@ -4,6 +4,19 @@ body{
 }
 *{
     color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --background:#1a191c;
+    --special-red:#c10500;
+    --light:#f9f9f9;
+}
+/*text*/
+.highlight{
+    color:var(--special-red);
+}
+h1{
+    font-size:38px;
 }
 
 
@@ -15,16 +28,11 @@ section{
     height: 100vh;
     width: 100vw;
 
-    background-color:slategrey;
-    border-bottom: 1px solid red;
-    
+    background-color:var(--background);
+}
 
-} 
-
-
-.footer-magic{
-    height: 100vh;
-    opacity: 0;
+.hide{
+    display: none;
 }
 
 /* Reveal Effect */

@@ -7,7 +7,6 @@
     z-index: 4;
 
     display: flex;
-
     justify-content: flex-end;
 }
 
@@ -47,15 +46,17 @@
 aside{
     width: 125px;
     height: 100vh;
-    border-right: 1px solid rgb(109, 64, 64);
+    border-right: 2px solid var(--special-red);
 
+    position: relative;
 }
 
     /* Logo */
 
     .logo{
         width: 100%;
-        height: 200px;
+        height: 35vh;
+        min-height: 200px;
         /* border-bottom: 1px solid red; */
 
         display: flex;
@@ -70,25 +71,31 @@ aside{
 
     .hamburger-menu{
         width: 100%;
-        height: 150px;
-        /* border-bottom: 1px solid red; */
+        height: 25vh;
+        min-height: 150px;
 
         display: flex;
         justify-content: center;
-        align-items: center;
     }
-        /* Hamburger hover Animation */
+        /* Hamburger style */
         .hamburger-menu img:hover{
-            filter: invert(50%) sepia(100%) saturate(7124%) hue-rotate(357deg) brightness(94%) contrast(115%);
+            cursor: pointer;
+        }
+        /* Hamburger Animation */
+        /* Bad way to position item (svg vs img [different sizes])*/
+        .hamburger-anim{
+            height:46px;
+            width:46px;
+            transform: translateY(-11px);
         }
 
     /* external links / social media */
 
     .aside-links{
         width: 100%;
-        height: 30vh;
-        min-height:250px;
-        /* border-bottom: 1px solid red; */
+        height: 20vh;
+        min-height:200px;
+        /* border: 1px solid red; */
 
         display: flex;
         flex-direction: column;
@@ -96,8 +103,8 @@ aside{
         align-items: center;
     }
     .aside-links ul {
-        list-style-position: inside;
-        padding: 0;
+        list-style: inside;
+        padding:0px 0px 0px 5px;
     }
     .aside-links li{
         margin-top: 15px;
@@ -107,6 +114,24 @@ aside{
         .aside-links li:hover{
             filter: invert(50%) sepia(100%) saturate(7124%) hue-rotate(357deg) brightness(94%) contrast(115%);
         }
+
+    /* equalizer */
+    .aside-equalizer{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+        .equalizer-anim{
+            height:35px;
+            width:30px;
+            margin-bottom: 15px;
+        }
+
 
 
 /* ------ */
@@ -138,7 +163,7 @@ aside{
     z-index: 3;
 }
 
-    video{
+    video, .bg-img{
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -148,7 +173,8 @@ aside{
 
 /*Intro heading*/
 
-.intro-heading{
+
+.intro-heading-container{
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -159,6 +185,19 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
 }
+    /*text box*/
+    .intro-heading{
+        width: 100vw;
+        height: 40vh;
+        padding-left:150px;
+    }
+    /* styling text */
+    .intro-heading h1{
+        margin-bottom: 0px;
+    }
+    .intro-heading p{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
