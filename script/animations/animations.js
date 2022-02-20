@@ -125,6 +125,28 @@ window.addEventListener('scroll', reveal);
 
 
 // ------------
+// top scroll effect
+const scrollDiv = document.getElementById('fixed-scrolling');
+
+document.addEventListener('scroll', () =>{
+    let position   = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollVal  = Math.round(position * 100 / calcHeight);
+
+    scrollDiv.style.width = scrollVal+'%';
+});
+
+
+
+
+
+// ------------
+
+
+// ------------
+
+
+
 
 
 

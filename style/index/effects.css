@@ -1,0 +1,22 @@
+/* Reveal Effect */
+
+.reveal{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s ease;
+}
+
+.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Scrolling Effect */
+
+#fixed-scrolling{
+    position:fixed;
+    height: 5px;
+    z-index: 6;
+    background-color: var(--special-red);
+    transition-duration: 350ms;
+}
