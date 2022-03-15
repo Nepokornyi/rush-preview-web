@@ -1,0 +1,47 @@
+#counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter-container{
+    display: flex;
+    flex-direction: row;
+}
+.counter-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 150px 0px 0px;
+    border-left:1px solid red;
+    padding-left: 150px;
+}
+.counter-wrapper:nth-child(1){
+    border:none;
+}
+
+
+/* ANIMATION */
+    @property --num {
+        syntax: '<integer>';
+        initial-value: 0;
+        inherits: false;
+    }
+    
+    .count-anim {
+        animation: counter 1s alternate;
+        counter-reset: num var(--num);
+        --num:1000;
+
+    }
+    .count-anim::after {
+        content: counter(num);
+    }
+    
+    @keyframes counter {
+        from {
+        --num: 0;
+        }
+        to {
+        --num: 1000;
+        }
+    }
