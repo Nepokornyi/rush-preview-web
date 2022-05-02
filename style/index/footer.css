@@ -1,10 +1,24 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
+
 /* 
     creating fixed positioned footer 
     by using z-index on project
 */
 
 
-.footer-invisible{
+#footer-invisible{
     height: 100vh;
     opacity: 0;
     pointer-events: none;
@@ -37,7 +51,8 @@ footer{
         flex-direction: column;
     }
 
-/* form - contacts */
+
+/* form - containers */
 
 .contact-up-container{
     width: 100vw;
@@ -59,10 +74,47 @@ footer{
         }
         .contact-up span{
             width: 127px;
-            padding-top: 40px; 
+            margin-top: 50px; 
             border-bottom:2px solid var(--special-red);
+            cursor: pointer;
+
+            display: flex;
+            align-items: flex-end;
+
+            transition: 350ms;
         }
 
+/* CONTACT FORM itself */
+.contact-form{
+    width: 540px;
+    margin-top: 40px;
+}
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+    .email-input{
+        height: 35px;
+        width: 540px;
+        background-color: transparent;
+        border:none;
+        border-bottom:1px solid red;
+        color:white;
+
+        padding-right:0px;
+    }
+    .email-button{
+        margin-top:15px;
+        height: 35px;
+        width: 125px;
+        padding-left:0px;
+    }
+    .email-button strong{
+        color:black;
+    }
+/* ------------ */
 
 .contact-down-container{
     width: 100vw;

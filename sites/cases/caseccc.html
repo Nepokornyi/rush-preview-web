@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCC</title>
+
+    <!--Global styles -->
+    <link rel="stylesheet" href="../../style/index/main.css">
+    <link rel="stylesheet" href="../../style/index/loader.css">
+    <link rel="stylesheet" href="../../style/index/portfolio-menu.css">
+    <link rel="stylesheet" href="../../style/index/main-menu.css">
+    <link rel="stylesheet" href="../../style/index/effects.css">
+    <link rel="stylesheet" href="../../style/index/footer.css">
+
+    <!-- Local styles -->
+    <link rel="stylesheet" href="../../style/ccc-case/ccc-intro.css">
+    <link rel="stylesheet" href="../../style/ccc-case/mission.css">
+    <link rel="stylesheet" href="../../style/ccc-case/about.css">
+    <link rel="stylesheet" href="../../style/ccc-case/solution.css">
+    <link rel="stylesheet" href="../../style/ccc-case/result.css">
+    <link rel="stylesheet" href="../../style/ccc-case/conclusion.css">
+
+    <!-- libraries -->
+    <link rel="stylesheet" href="../../script/libraries/splide-4.0.1/dist/css/splide.min.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loading-container">
+        <img class='loader' src='../../media/assets/logo/logo_loading.gif' alt="logo animation">
+    </div>
+
+    <!-- Top Bar scrolling effect -->
+    <div id="fixed-scrolling"></div>
+
+    <!-- SlideTransition -->
+    <div id="portfolio-menu-transition-in"></div>
+    <div id="portfolio-menu-transition-out"></div>
+
+    <!-- portfolio-menu (hidden) -->
+    <section class="portfolio-menu hide">
+
+        <div class='header-menu'>
+            <div class="header-cases-wrapper">
+            <p><strong>ПОРТФОЛИ<span class="highlight">О</span></strong></p>
+            <a id="slide-out-button"><div class="all-cases-button svg-transition"></div></a>
+            </div>
+        </div>
+        
+        <div class="hidden-portfolio-menu-container">
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="../cases/casebart.html">Barbershop Bart</a></li>
+                        <li><a href="../cases/casedlnsk.html">DLNSK Shop</a></li>
+                        <li><a href="../cases/casebrowbar.html">The Brow Bar</a></li>
+                        <li><a href="../cases/caseccc.html">CCC</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- main-menu (hidden) -->
+    <section class="main-menu hide">
+        <div class="main-menu-container">
+            <div>
+                <nav>
+                    <ul>
+                        <li onclick="goToVideo()"><a id="video-link">Главная</a></li>
+                        <li onclick="goToSolution()"><a id="solution-link">Решение</a></li>
+                        <li onclick="goToProduct()"><a id="product-link">Продукт</a></li>
+                        <li onclick="goToResult()"><a id="result-link">Результат</a></li>
+                        <li onclick="goToContact()"><a id="contact-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- side bar -->
+    <div class="side-menu-container blur">
+        <aside>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../media/assets/logo.svg" alt=""></a>
+            </div>
+
+            <div class="hamburger-menu">
+                <a id="start-hamburger"><img src="../../media/assets/burger.svg" alt=""></a>
+                <a><div class="hamburger-anim hide" id="hamburger-anim"></div></a>   
+            </div>
+
+            <div class="aside-links">                
+                    <a href=""><div class="ig-link svg-transition"></div></a>
+                    <a href=""><div class="fb-link svg-transition"></div></a>
+                    <a href=""><div class="mail-link svg-transition"></div></a>
+            </div>
+            <!-- <div class="aside-equalizer">
+                <a><div class="equalizer-anim" id="equalizer-anim"></div></a>
+            </div> -->
+        </aside>
+    </div>
+
+    <!-- Arrow pointing down -->
+    <div class="arrow-down-container blur">
+        <a href="#case-mission">
+            <div class="arrow"></div>
+        </a>
+    </div>
+
+    <main id="main">
+        <!-- fixed top menu -->
+        <header class="blur">
+            <div class='header-menu'>
+                <div class="header-cases-wrapper">
+                <p><strong>ПОРТФОЛИ<span class="highlight">О</span></strong></p>
+                <a id="slide-in-button"><div class="all-cases-button svg-transition"></div></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Case Content -->
+        <div class="ccc-video-container blur">
+            <section id="ccc-video">
+                <div class="video-container mask">
+                    <img src="https://picsum.photos/1920/1080" alt="" class="bg-img">
+                </div>
+            </section>
+
+            <div class="ccc-fixed-container">
+                <div class="ccc-fixed-video">
+                <img src="https://picsum.photos/1920/1080" alt="" class="bg-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Mission -->
+        <section id="case-mission">
+            <div class="mission-container-top">
+                <div class="mission-top-picture">
+                    <img src="https://picsum.photos/1920/500" alt="">
+                </div>
+                <div class="mission-top-content">
+                    <figure>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <figcaption>
+                            <p>Тип кейса:</p>
+                            <h3>трансляция <br> прямого эфира</h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <figcaption>
+                            <p>Бюджет:</p>
+                            <h3>X</h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <figcaption>
+                            <p>Время:</p>
+                            <h3>7 дней подготовки <br> + 1 съемочный день</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="mission-container-bottom">
+                <div class="mission-content-center">
+                    <h2>Задача:</h2>
+                    <p>Перенести презентацию новых коллекций 4-х брендов ССС для представителей чешских медиа в условиях локдауна.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-client-case">
+            <div class="left-client-case">
+                <div class="client-case-logo">Лого</div>
+                <h2>О клиенте:</h2>
+                <p>CCC S.A. — одна из крупнейших компаний по розничной торговле обувью в Центральной Европе           с собственной фабрикой кожаной обуви, которая ежегодно продает около 40 миллионов пар обуви. На сегодняшний день ССС создает свои коллекции под несколькими брендами, ей принадлежат свыше 67 торговых марок (Lasocki, TM Sprandi, Jenny Fairy и др.)
+                </p>
+            </div>
+            <div class="right-client-case">
+                    <img src="https://picsum.photos/1000/1000" alt="">
+            </div>
+        </section>
+
+
+        <section id="case-solution">
+            <div class="case-solution-container">
+                <img src="https://picsum.photos/1920/1080" alt="">
+
+                <div class="case-solution-content">
+                    <h2>Решение:</h2>
+
+                    <div class="case-solution-points">
+                        <h2>1.</h2>
+                        <p>Нашли помещение и полностью его подготовили для съемки         в команде с представителями ССС, которые отвечали за визуальное наполнение кадра. Было создано 4 локации для каждого отдельного бренда, представлявшего новую коллекцию.</p>
+                    </div>
+                    <div class="case-solution-points">
+                        <h2>2.</h2>
+                        <p>Взяли на себя все технические вопросы: камеры, звук, освещение и другое оборудование для стриминга.</p>
+                    </div>
+                    <div class="case-solution-points">
+                        <h2>3.</h2>
+                        <p>Составили поминутный план трансляции, провели репетицию для ведущих и закадровых участников прямого эфира.</p>
+                    </div>
+                    <div class="case-solution-points">
+                        <h2>4.</h2>
+                        <p>Предложили и реализовали решение по вопросу передвижения камер во время онлайн презентации. Для того чтобы изображение было стабильно - запускалась 30-секундная реклама, за время которой ведущие и операторы передвигались на следующую локацию, далее настраивался свет и прямой эфир продолжался.</p>
+                    </div>
+                    <div class="case-solution-points">
+                        <h2>5.</h2>
+                        <p>Создали дополнительный контент из предоставленных компанией материалов для рекламы во время прямого эфира и создания коротких видео с графическими элементами (рилс) для дальнейшего продвижения. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="case-solution-conclusion">
+            <div class="solution-ending">
+                <p>
+                    Мы реализовали проект с 0 до конечного результата, 
+который устроил клиента.
+                </p>
+            </div>  
+        </section>
+
+         <!-- Case Solution -->
+         <section id="case-description">
+            <div class="case-description-text">
+                <article>
+                    <h1>Результат:</h1>
+                    <p>
+                        Традиционная презентация новых коллекций брендов ССС была успешно перенесена нами 
+                        из офлайн формата в онлайн. На трансляции присутствовало 100+ представителей медиа.
+                        <br>
+                    </p>
+
+                    <p>
+                        <br>
+                        Весь прямой эфир прошел без заминок 
+                        и форс-мажоров.
+                    </p>
+                </article>
+            </div>
+            <div class="case-solution-img">
+                <img src="https://picsum.photos/1920/1080" alt="">
+            </div>
+        </section>
+
+        <!-- Video -->
+        <!-- Counter -->
+        <section>
+            <div class="video-container">
+                <img src="https://picsum.photos/1920/1078" alt="" class="bg-img">
+            </div>
+
+            <!-- Counter -->
+            <div id="counter" class="counter reveal">
+                <div class="counter-container">
+                    <div class="counter-wrapper">
+                        <span>Lorem Ipsum</span>
+                        <div class="counter-target count-anim-1"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Ipsum Lorem</span>
+                        <div class="counter-target count-anim-2"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Dolor Sit Amet</span>
+                        <div class="counter-target count-anim-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="case-conclusion">
+            <div class="case-conclusion-text">
+                <h1>Важно:</h1>
+                <p>Весь контент, который предоставляет наша команда, лицензирован. Фото, видео, звуковые эффекты и музыка - все это можно использовать на любых платформах, не боясь блокировок, теневых банов и претензий авторов.</p>
+
+            </div>
+            <div class="splide carousel-conclusion" role="group">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><a href="./casedlnsk.html"><img src="../../media/assets/carousel/dlnsk.png" alt=""></a></li>
+                        <li class="splide__slide"><a href="./casebrowbar.html"><img src="../../media/assets/carousel/thebrowbar.png" alt=""></a></li>
+                        <li class="splide__slide"><a href="./caseccc.html"><img src="../../media/assets/carousel/ccc.png" alt=""></a></li>
+                        <li class="splide__slide"><a href="./casebart.html"><img src="../../media/assets/carousel/bart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- invisible block -->
+        <section id="footer-invisible"></section>
+
+    </main>
+
+    <!-- footer -->
+    <footer id="contact">
+        <div class="contact-bg blur">
+            <div class="contact-up-container">
+                <div class="contact-up">
+                    <h1>ХОТИТЕ УЗНАТЬ БОЛЬШЕ?</h2>
+                    <h1>СВЯЖИТЕСЬ С НАМИ!</h1>
+    
+                    <span class="contact-us-text">Напишите Нам</span>
+                    <form class="contact-form">
+                        <div>
+                            <input type="email" placeholder="example@email.com" class="email-input">
+                            <button class="email-button"><strong>ОТПРАВИТЬ</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-down-container">
+                <div class="contact-down">
+                    <ul>
+                        <li>
+                            <span><strong>АДРЕСС</strong></span>
+                            <span>Třebízského 9, 160 00 Vinohrady</span>
+                        </li>
+                        <li>
+                            <span><strong>ТЕЛЕФОН</strong></span>
+                            <span>+420 777 111 444</span>
+                        </li>
+                        <li>
+                            <span><strong>ПОЧТА</strong></span>
+                            <span>libofinspiration@gmail.com</span>
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../../script/libraries/splide-4.0.1/dist/js/splide.min.js"></script>
+
+    <script src="../../script/animations/case/ccc/cccEffects.js"></script>
+    <script src="../../script/animations/main/animations.js"></script>
+    <script src="../../script/loader/loader.js"></script>
+    <script src="../../script/animations/case/bart/sideMenu.js"></script>
+    <script src="../../script/contactForm/contact.js"></script>
+</body>
+</html>

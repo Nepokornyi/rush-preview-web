@@ -1,0 +1,39 @@
+.about-client{
+    height: 50vh;
+    min-height: 400px;
+}
+
+/* Article */
+
+.about-client>article{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+    .up-about-client{
+        width: 85vw;
+
+    }
+    .down-about-client{
+        width: 85vw;
+        margin: 0px 0px 0px 50px;
+        display: flex;
+        flex-direction: row;
+        line-height: 1.6;
+
+    }
+        .down-left-about-client{
+            width: 50vw;
+        }
+        .down-right-about-client{
+            width: 30vw;
+            display: flex;
+            justify-content: flex-end;
+        }  
+
+/* Counter */
+
+.counter{
+    height: 50vh;
+}

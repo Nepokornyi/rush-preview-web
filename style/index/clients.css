@@ -51,6 +51,11 @@
     align-items: center;
     justify-content: center;
 }
+.client-figure img{
+    width: 15vw;
+    height: 30vh;
+    object-fit: contain;
+}
 
 /* SETUP DONE */
 /* ---------- */

@@ -1,70 +1,14 @@
-    /* Transition */
-
-    #main-menu-transition-in, #main-menu-transition-out{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-
-        background-color: var(--special-red);
-
-        z-index: 6;
-    }
-    #main-menu-transition-in{
-        top:0px;
-        left: -100vw;
-    }
-    #main-menu-transition-out{
-        top:0px;
-        right:-100vw;
-    }
-
-    .slide-in{
-        animation: slide-in 1.5s forwards;
-    }
-    .slide-out{
-        animation: slide-out 1.5s forwards;
-    }
-
-    /* Transition Keyframes */
-
-    /* Into Menu */
-    @keyframes slide-in {
-        50%{
-            left:0px;
-        }
-        100%{
-            left:100vw;
-        }
-    }
-
-    /* Out of Menu */
-    @keyframes slide-out {
-        50%{
-            right:0px;
-        }
-        100%{
-            right:100vw;
-        }
-    }
-
-
-
-/* ------- */
-/* Main Menu Styling */
-/* ------- */
 .main-menu{
     position: absolute;
     width: 100vw;
     height: 99.9vh;
     
-    background-color: black;
+    background-color: var(--background);
 
     overflow-y: hidden;
-    
+    z-index: 5;
 }
-
-/* Menu Box */
-.hidden-menu-container{
+.main-menu-container{
     width: 100vw;
     height: 100vh;
 
@@ -74,23 +18,30 @@
     align-items: center;
     justify-content: center;
 }
-    .hidden-menu-container div{
-        width: 80vw;
-        height: 75vh;
-        overflow-y: auto;
-    }
 
+.main-menu-container div{
+    width: 80vw;
+    height: 100vh;
+    overflow-y: auto;
+}
 
-
-.main-menu ul{
+.main-menu-container ul{
     list-style-type: none;
     font-size: 100px;
 }
-.main-menu li{
+.main-menu-container li{
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    color:black;
-}
-.main-menu li:hover{
-    color:white;
+    color:var(--background);
 }
 
+.main-menu-container a{
+    cursor: pointer;
+    text-decoration: none;
+    color:var(--background);
+    transition-duration: 450ms;
+}
+
+.main-menu-container a:hover{
+    color:white;
+    transition: 550ms ease-in-out;
+}

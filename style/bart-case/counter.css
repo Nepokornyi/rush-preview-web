@@ -1,0 +1,102 @@
+:root{
+    --first-num:5596;
+    --second-num:11005;
+    --third-num:91;
+    --fourth-num:196;
+}
+
+#counter{
+    position: absolute;
+    width: 1000px;
+    height: 200px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    background-color: var(--background);
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 35px;
+}
+.counter-container{
+    display: flex;
+    flex-direction: row;
+}
+.counter-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 125px 0px 0px;
+    border-left:2px solid red;
+    padding-left: 75px;
+    font-size: 18px;
+}
+
+.counter-wrapper:nth-child(1){
+    border:none;
+}
+
+.counter-wrapper>span{
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ANIMATION */
+    @property --num {
+        syntax: '<integer>';
+        initial-value: 0;
+        inherits: false;
+    }
+    .counter-start{
+        animation: counter 2s alternate;
+        display: flex;
+        justify-content: center;
+    }
+    .counter-start::after{
+        content: counter(num);
+    }
+
+
+    
+    .count-anim-1{
+        --holder:var(--first-num);
+        counter-reset: num var(--num);
+        --num:var(--first-num);
+    }
+    .count-anim-2{
+        --holder:var(--second-num);
+        counter-reset: num var(--num);
+        --num:var(--second-num);
+    }
+    .count-anim-3{
+        --holder:var(--third-num);
+        counter-reset: num var(--num);
+        --num:var(--third-num);
+    }
+    .count-anim-4{
+        --holder:var(--fourth-num);
+        counter-reset: num var(--num);
+        --num:var(--fourth-num);
+    }
+    
+    @keyframes counter {
+        from {
+        --num: 0;
+        }
+        to {
+        --num: var(--holder);
+        }
+    }
+
+    .counter-target{
+        margin-top: 25px;
+        font-size: 25px;
+        font-weight: bold;
+    }

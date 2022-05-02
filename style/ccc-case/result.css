@@ -1,0 +1,34 @@
+/* Case Section */
+#case-description{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+    /* Left Text Container */
+    .case-description-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 55vw;
+        height: 50vh;
+    }
+    /* Article Styling */
+    .case-description-text>article{
+        width: 35vw;
+        line-height: 1.6;
+    }
+        .case-description-text>article>p{
+            margin-left: 50px;
+        }
+
+    /* Before-after picture effect */
+    /* Container */
+    .case-solution-img{
+        width: 40vw;
+        margin-right: 5vw;
+    }
+        .case-solution-img img{
+            width: 100%;
+            height: 100%;
+        }

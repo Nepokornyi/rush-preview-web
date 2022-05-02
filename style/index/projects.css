@@ -38,6 +38,11 @@
     font-size: 14px;
 }
 
+/* Link styling */
+.project-figure a{
+    text-decoration: none;
+}
+
 
 
 /* Img Hover Effect */
