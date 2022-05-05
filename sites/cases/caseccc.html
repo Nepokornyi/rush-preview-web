@@ -7,12 +7,12 @@
     <title>CCC</title>
 
     <!--Global styles -->
-    <link rel="stylesheet" href="../../style/index/main.css">
-    <link rel="stylesheet" href="../../style/index/loader.css">
-    <link rel="stylesheet" href="../../style/index/portfolio-menu.css">
-    <link rel="stylesheet" href="../../style/index/main-menu.css">
-    <link rel="stylesheet" href="../../style/index/effects.css">
-    <link rel="stylesheet" href="../../style/index/footer.css">
+    <link rel="stylesheet" href="../../style/global/main.css">
+    <link rel="stylesheet" href="../../style/global/loader.css">
+    <link rel="stylesheet" href="../../style/global/portfolio-menu.css">
+    <link rel="stylesheet" href="../../style/global/main-menu.css">
+    <link rel="stylesheet" href="../../style/global/effects.css">
+    <link rel="stylesheet" href="../../style/global/footer.css">
 
     <!-- Local styles -->
     <link rel="stylesheet" href="../../style/ccc-case/ccc-intro.css">
@@ -28,7 +28,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -131,13 +131,21 @@
         <div class="ccc-video-container blur">
             <section id="ccc-video">
                 <div class="video-container mask">
-                    <img src="https://picsum.photos/1920/1080" alt="" class="bg-img">
+                    <video autoplay loop muted>
+                        <source src="../../media/case/ccc/video/horizontal_ccc_cover.mp4" type="video/mp4">
+                        <source src="../../media/case/ccc/video/horizontal_ccc_cover.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </section>
 
             <div class="ccc-fixed-container">
                 <div class="ccc-fixed-video">
-                <img src="https://picsum.photos/1920/1080" alt="" class="bg-img">
+                    <video autoplay loop muted>
+                        <source src="../../media/case/ccc/video/horizontal_ccc_cover.mp4" type="video/mp4">
+                        <source src="../../media/case/ccc/video/horizontal_ccc_cover.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
@@ -146,7 +154,7 @@
         <section id="case-mission">
             <div class="mission-container-top">
                 <div class="mission-top-picture">
-                    <img src="https://picsum.photos/1920/500" alt="">
+                    <img src="../../media/case/ccc/static/gradient.png" alt="">
                 </div>
                 <div class="mission-top-content">
                     <figure>
@@ -180,6 +188,7 @@
             </div>
         </section>
 
+        <!-- About Client -->
         <section id="about-client-case">
             <div class="left-client-case">
                 <div class="client-case-logo">Лого</div>
@@ -188,14 +197,18 @@
                 </p>
             </div>
             <div class="right-client-case">
-                    <img src="https://picsum.photos/1000/1000" alt="">
+                    <img src="../../media/case/ccc/static/ccc_about.png" alt="">
             </div>
         </section>
 
 
+        <!-- Case Solution -->
         <section id="case-solution">
             <div class="case-solution-container">
-                <img src="https://picsum.photos/1920/1080" alt="">
+                <video autoplay loop muted>
+                    <source src="../../media/case/ccc/video/horizontal_ccc_cover.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
                 <div class="case-solution-content">
                     <h2>Решение:</h2>
@@ -232,8 +245,9 @@
             </div>  
         </section>
 
-         <!-- Case Solution -->
-         <section id="case-description">
+
+        <!-- Case Description -->
+        <section id="case-description">
             <div class="case-description-text">
                 <article>
                     <h1>Результат:</h1>
@@ -251,36 +265,21 @@
                 </article>
             </div>
             <div class="case-solution-img">
-                <img src="https://picsum.photos/1920/1080" alt="">
+                <img src="../../media/case/ccc/static/ccc_location.png" alt="">
             </div>
         </section>
 
         <!-- Video -->
-        <!-- Counter -->
         <section>
             <div class="video-container">
-                <img src="https://picsum.photos/1920/1078" alt="" class="bg-img">
-            </div>
-
-            <!-- Counter -->
-            <div id="counter" class="counter reveal">
-                <div class="counter-container">
-                    <div class="counter-wrapper">
-                        <span>Lorem Ipsum</span>
-                        <div class="counter-target count-anim-1"></div>
-                    </div>
-                    <div class="counter-wrapper">
-                        <span>Ipsum Lorem</span>
-                        <div class="counter-target count-anim-2"></div>
-                    </div>
-                    <div class="counter-wrapper">
-                        <span>Dolor Sit Amet</span>
-                        <div class="counter-target count-anim-3"></div>
-                    </div>
-                </div>
+                <video autoplay loop muted>
+                    <source src="../../media/case/ccc/video/horizontal_ccc_item_case.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
 
+        <!-- Case Conclusion -->
         <section id="case-conclusion">
             <div class="case-conclusion-text">
                 <h1>Важно:</h1>
@@ -314,9 +313,10 @@
                     <h1>СВЯЖИТЕСЬ С НАМИ!</h1>
     
                     <span class="contact-us-text">Напишите Нам</span>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/60e63a4e06f15a4b5c1627e74236d4f6" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
                         <div>
-                            <input type="email" placeholder="example@email.com" class="email-input">
+                            <input type="email" name='email' placeholder="example@email.com" class="email-input">
                             <button class="email-button"><strong>ОТПРАВИТЬ</strong></button>
                         </div>
                     </form>

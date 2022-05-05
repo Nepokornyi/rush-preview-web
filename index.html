@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ru.sh studio</title>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD91E78YG2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QD91E78YG2');
+    </script>
+
     <!--global styles -->
-    <link rel="stylesheet" href="./style/index/main.css">
-    <link rel="stylesheet" href="./style/index/portfolio-menu.css">
-    <link rel="stylesheet" href="./style/index/effects.css">
-    <link rel="stylesheet" href="./style/index/main-menu.css">
-    <link rel="stylesheet" href="./style/index/loader.css">
+    <link rel="stylesheet" href="./style/global/main.css">
+    <link rel="stylesheet" href="./style/global/portfolio-menu.css">
+    <link rel="stylesheet" href="./style/global/effects.css">
+    <link rel="stylesheet" href="./style/global/main-menu.css">
+    <link rel="stylesheet" href="./style/global/loader.css">
+    <link rel="stylesheet" href="./style/global/footer.css">
 
     <!-- site styles -->
     <link rel="stylesheet" href="./style/index/intro.css">
@@ -19,12 +31,11 @@
     <link rel="stylesheet" href="./style/index/projects.css">
     <link rel="stylesheet" href="./style/index/clients.css">
     <link rel="stylesheet" href="./style/index/counter.css">
-    <link rel="stylesheet" href="./style/index/footer.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -55,8 +66,8 @@
                 <nav>
                     <ul>
                         <li><a href="./sites/cases/casebart.html">Barbershop Bart</a></li>
-                        <li><a href="./sites/cases/casedlnsk.html">DLNSK Shop</a></li>
                         <li><a href="./sites/cases/casebrowbar.html">The Brow Bar</a></li>
+                        <li><a href="./sites/cases/casedlnsk.html">DLNSK Shop</a></li>
                         <li><a href="./sites/cases/caseccc.html">CCC</a></li>
                     </ul>
                 </nav>
@@ -71,8 +82,8 @@
                 <nav>
                     <ul>
                         <li onclick="goToVideo()"><a id="video-link">Главная</a></li>
-                        <li onclick="goToAbout()"><a id="about-link">Студия</a></li>
-                        <li onclick="goToProjects()"><a id="projects-link">Работы</a></li>
+                        <li onclick="goToAbout()"><a id="about-link">Услуги</a></li>
+                        <li onclick="goToProjects()"><a id="projects-link">Кейсы</a></li>
                         <li onclick="goToClients()"><a id="clients-link">Клиенты</a></li>
                         <li onclick="goToContact()"><a id="contact-link">Контакты</a></li>
                     </ul>
@@ -146,7 +157,7 @@
 
                     <div class="project-wrapper">
                         <figure class="project-figure">
-                            <a href="./sites/cases/casebart.html"><img class="project-img" src="./media/assets/clients/bart-client.png" alt=""></a>
+                            <a href="./sites/cases/casebart.html"><img class="project-img" src="./media/mainPage/static/thmbnls/bart.png" alt=""></a>
                             <figcaption><a href="./sites/cases/casebart.html"><strong>BART BARBERSHO<span class="highlight">P</span></strong></a><br>
                             <span class="project-tag">Brand, Promotion, Digital</span>
                             </figcaption>
@@ -154,7 +165,7 @@
                     </div>
                     <div class="project-wrapper">
                         <figure class="project-figure">
-                            <a href="./sites/cases/casedlnsk.html"><img class="project-img" src="./media/assets/clients/dlnsk-client.png" alt=""></a>
+                            <a href="./sites/cases/casedlnsk.html"><img class="project-img" src="./media/mainPage/static/thmbnls/dlnsk.png" alt=""></a>
                             <figcaption><a href="./sites/cases/casebart.html"><strong>DLNSK SHO<span class="highlight">P</span></strong></a><br>
                             <span class="project-tag">Digital, Promotion</span>
                             </figcaption>
@@ -162,7 +173,7 @@
                     </div> 
                     <div class="project-wrapper">
                         <figure class="project-figure">
-                            <a href="./sites/cases/casebrowbar.html"><img class="project-img" src="./media/assets/clients/browbar-client.png" alt=""></a>
+                            <a href="./sites/cases/casebrowbar.html"><img class="project-img" src="./media/mainPage/static/thmbnls/thebrowbar.png" alt=""></a>
                             <figcaption><a href="./sites/cases/casebrowbar.html"><strong>THE BROW BA<span class="highlight">R</span></strong></a><br>
                             <span class="project-tag">Digital</span>
                             </figcaption>
@@ -183,48 +194,79 @@
                         <div class="clients-logo-wrapper">
                             <figure class="client-figure">
                                 <a href="https://bart-barbershop.cz/" target="_blank">
-                                    <img src="./media/mainPage/clients/bart.png" alt="">
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="clients-logo-wrapper">
-                            <figure class="client-figure">
-                                <a href="http://thebrowbar.cz/" target="_blank">
-                                    <img src="./media/mainPage/clients/browbar.png" alt="">
+                                    <img src="./media/mainPage/static/logos/bart.svg" alt="">
                                 </a>
                             </figure>
                         </div>
                         <div class="clients-logo-wrapper">
                             <figure class="client-figure">
                                 <a href="https://fitbydlnsk.com/" target="_blank">
-                                    <img src="https://picsum.photos/211/151" alt="">
+                                    <img src="./media/mainPage/static/logos/dlnsk.svg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <a href="http://thebrowbar.cz/" target="_blank">
+                                    <img src="./media/mainPage/static/logos/thebrowbar.svg" alt="">
                                 </a>
                             </figure>
                         </div>
                     </div>
+
+                    <div class="middle-logo-row reveal">
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <a href="https://rey.cz/" target="_blank">
+                                    <img src="./media/mainPage/static/logos/rey_hockey.svg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <a href="https://ccc.eu/cz/" target="_blank">
+                                    <img src="./media/mainPage/static/logos/ccc.svg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="clients-logo-wrapper">
+                            <figure class="client-figure">
+                                <a href="https://kemcarrie.com/" target="_blank">
+                                    <img src="./media/mainPage/static/logos/kemcarrie.svg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
 
         <!-- counter section -->
-        <section id="counter">
-            <div class="counter-container reveal">
-                <div class="counter-wrapper">
-                    <span>Lorem Ipsum</span>
-                    <div class="counter-target count-anim-1"></div>
-                </div>
-                <div class="counter-wrapper">
-                    <span>Ipsum Lorem</span>
-                    <div class="counter-target count-anim-2"></div>
-                </div>
-                <div class="counter-wrapper">
-                    <span>Dolor Sit Amet</span>
-                    <div class="counter-target count-anim-3"></div>
-                </div>
-                <div class="counter-wrapper">
-                     <span>Amet Lorem</span>
-                     <div class="counter-target count-anim-4"></div>
+        <section>
+            <div class="video-container">
+                <img src="https://picsum.photos/1920/1078" alt="" class="bg-img">
+            </div>
+
+            <div id="counter" class="counter reveal">
+                <div class="counter-container">
+                    <div class="counter-wrapper">
+                        <span>Lorem Ipsum</span>
+                        <div class="counter-target count-anim-1"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Ipsum Lorem</span>
+                        <div class="counter-target count-anim-2"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Dolor Sit Amet</span>
+                        <div class="counter-target count-anim-3"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Amet Lorem</span>
+                        <div class="counter-target count-anim-4"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -242,9 +284,10 @@
                     <h1>СВЯЖИТЕСЬ С НАМИ!</h1>
     
                     <span class="contact-us-text">Напишите Нам</span>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/60e63a4e06f15a4b5c1627e74236d4f6" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
                         <div>
-                            <input type="email" placeholder="example@email.com" class="email-input">
+                            <input type="email" name='email' placeholder="example@email.com" class="email-input">
                             <button class="email-button"><strong>ОТПРАВИТЬ</strong></button>
                         </div>
                     </form>

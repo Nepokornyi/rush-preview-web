@@ -1,0 +1,48 @@
+.main-menu{
+    position: absolute;
+    width: 100vw;
+    height: 99.9vh;
+    
+    background-color: var(--background);
+
+    overflow-y: hidden;
+    z-index: 5;
+}
+.main-menu-container{
+    width: 100vw;
+    height: 100vh;
+
+    overflow-y: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-menu-container div{
+    width: 80vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-menu-container ul{
+    list-style-type: none;
+    font-size: 100px;
+    font-weight: 900;
+}
+.main-menu-container li{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color:var(--background);
+}
+
+.main-menu-container a{
+    cursor: pointer;
+    text-decoration: none;
+    color:var(--background);
+    transition-duration: 450ms;
+}
+
+.main-menu-container a:hover{
+    color:white;
+    transition: 550ms ease-in-out;
+}

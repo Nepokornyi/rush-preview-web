@@ -5,6 +5,10 @@
     --fourth-num:196;
 }
 
+.counter{
+    height: 50vh;
+}
+
 #counter{
     position: absolute;
     width: 1000px;

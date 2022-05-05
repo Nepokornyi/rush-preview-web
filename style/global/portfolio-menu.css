@@ -1,0 +1,108 @@
+    /* Transition */
+
+    #portfolio-menu-transition-in, #portfolio-menu-transition-out{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--special-red);
+
+        z-index: 6;
+    }
+    #portfolio-menu-transition-in{
+        top:0px;
+        left: -100vw;
+    }
+    #portfolio-menu-transition-out{
+        top:0px;
+        right:-100vw;
+    }
+
+    .slide-in{
+        animation: slide-in 1s forwards;
+    }
+    .slide-out{
+        animation: slide-out 1s forwards;
+    }
+
+    /* Transition Keyframes */
+
+    /* Into Menu */
+    @keyframes slide-in {
+        50%{
+            left:0px;
+        }
+        100%{
+            left:100vw;
+        }
+    }
+
+    /* Out of Menu */
+    @keyframes slide-out {
+        50%{
+            right:0px;
+        }
+        100%{
+            right:100vw;
+        }
+    }
+
+
+
+/* ------- */
+/* Main Menu Styling */
+/* ------- */
+.portfolio-menu{
+    position: absolute;
+    width: 100vw;
+    height: 99.9vh;
+    
+    background-color: var(--background);
+
+    overflow-y: hidden;
+
+    z-index: 5;
+}
+
+/* Menu Box */
+.hidden-portfolio-menu-container{
+    width: 100vw;
+    height: 100vh;
+
+    overflow-y: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .hidden-portfolio-menu-container div{
+        width: 80vw;
+        height: 75vh;
+        overflow-y: auto;
+    }
+
+
+
+.hidden-portfolio-menu-container ul{
+    list-style-type: none;
+    font-size: 100px;
+    font-weight: 900;
+}
+.hidden-portfolio-menu-container li{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color:var(--background);
+}
+
+.hidden-portfolio-menu-container a{
+    text-decoration: none;
+    color:var(--background);
+    transition-duration: 450ms;
+}
+
+.hidden-portfolio-menu-container a:hover{
+    color:white;
+    transition: 550ms ease-in-out;
+}
+
+
+

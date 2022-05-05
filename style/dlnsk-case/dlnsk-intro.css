@@ -1,0 +1,285 @@
+
+/* Adding Mask */
+.mask{
+    object-fit: cover;
+
+    -webkit-mask-image: url(../../media/case/bart/mask/bart-mask.svg);
+    mask-image: url(../../media/case/bart/mask/bart-mask.svg);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position:top;
+    mask-position:top;
+}
+
+
+/* Adding invisible block for video */
+.invisible{
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Creating Container for Fixed video */
+.dlnsk-video-container{
+    position:relative;
+    transition:350ms ease-in-out;
+    z-index: 3;
+}
+#dlnsk-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 3;
+}
+/* Fixed Position for video */
+.dlnsk-fixed-container{
+    /* position: sticky;
+    top:0px;
+    left:0px; */
+    width: 100vw;
+    height: 200vh;
+    z-index: 3;
+}
+.dlnsk-fixed-video{
+    position: sticky;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Global settings */
+
+.main-menu{
+    transition: 400ms ease-out;
+}
+
+/* absolute position for header */
+.header-menu{
+    position: absolute;
+    width: 100vw;
+    height: 50px;
+
+    z-index: 4;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+    /* header text */
+    .header-menu p{
+        padding:0;
+        margin-right: 10px;
+    }
+
+    /* all cases wrapper (position-margin) */
+    .header-cases-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin:15px 40px 0px 0px;
+    }
+
+    /* all cases hover animation */
+    .all-cases-button{
+        width: 30px;
+        height: 60px;
+        
+        -webkit-mask-image:url('../../media/assets/all_cases_button.svg');
+        mask-image:url('../../media/assets/all_cases_button.svg');
+    }
+
+
+
+    /* ASIDE SVG anim */
+    .svg-transition{
+        -webkit-mask-position: center;
+        mask-position: center;
+
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+
+        background-color: white;
+        cursor: pointer;
+
+        transition:300ms;
+    }
+    .svg-transition:hover{
+        background-color: red;
+
+        transition:300ms;
+    }
+
+
+/* ----- */
+
+/* absolute position for sidebar */
+.side-menu-container{
+    position: absolute;
+    z-index: 5;
+}
+
+/* side menu */
+
+aside{
+    width: 125px;
+    height: 100vh;
+    border-right: 2px solid var(--special-red);
+
+    position: relative;
+}
+
+    /* Logo */
+
+    .logo{
+        width: 100%;
+        height: 35vh;
+        min-height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .logo img{
+        margin-top: 35px;
+    }
+
+    /* Hamburger menu */
+
+    .hamburger-menu{
+        width: 100%;
+        height: 20vh;
+        min-height: 100px;
+
+        display: flex;
+        justify-content: center;
+    }
+        /* Hamburger style */
+        .hamburger-menu img:hover{
+            cursor: pointer;
+        }
+        /* Hamburger Animation */
+        /* Bad way to position item (svg vs img [different sizes])*/
+        .hamburger-anim{
+            height:46px;
+            width:46px;
+            transform: translateY(-11px);
+        }
+
+    /* external links / social media */
+
+    .aside-links{
+        width: 100%;
+        height: 20vh;
+        min-height:200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        /*svg masks*/
+        .ig-link, .fb-link, .mail-link{
+            width: 30px;
+            height: 30px;
+
+            margin-top: 25px;
+        }
+        .ig-link{
+            -webkit-mask-image:url('../../media/assets/ig.svg');
+            mask-image:url('../../media/assets/ig.svg');
+        }
+        .fb-link{
+            -webkit-mask-image:url('../../media/assets/fb.svg');
+            mask-image:url('../../media/assets/fb.svg');
+        }
+        .mail-link{
+            -webkit-mask-image:url('../../media/assets/mail.svg');
+            mask-image:url('../../media/assets/mail.svg');
+        }
+        /* external links hover animation */
+        /*using svg-transition class*/
+        .ig-link:hover, .fb-link:hover, .mail-link:hover{
+            transform: scale(1.3);
+        }
+
+
+/* Video */
+
+.video-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 3;
+}
+
+    video, .bg-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* ------ */
+
+/*Intro heading*/
+
+
+.intro-heading-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+    /*text box*/
+    .intro-heading{
+        width: 100vw;
+        height: 40vh;
+        padding-left:150px;
+    }
+    /* styling text */
+    .intro-heading h1{
+        margin-bottom: 0px;
+    }
+    .intro-heading p{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+
+
+/* Arrow pointing down */
+
+.arrow-down-container{
+    position: absolute;
+    z-index: 4;
+    bottom: 50px;
+    left:50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+    .arrow{
+        width: 25px;
+        height: 25px;
+
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }

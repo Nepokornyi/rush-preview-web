@@ -1,0 +1,24 @@
+#about-client-case{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+    .left-client-case{
+        width: 50vw;
+    }
+        .left-client-case p{
+            width: 400px;
+            margin: 0px 0px 0px 35px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    
+    .right-client-case{
+        width:40vw;
+        height: 100vh;
+    }
+        .right-client-case img{
+            width: 100%;
+            height: 100%;
+        }

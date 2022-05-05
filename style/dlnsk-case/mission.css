@@ -1,0 +1,69 @@
+#case-mission{
+    display: flex;
+    flex-direction: column;
+}
+
+    .mission-container{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    /* background picture */
+    .mission-picture{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+
+        object-fit: contain;
+    }
+    .mission-picture img{
+        width: 100%;
+        height: 100%;
+    }
+        /* Points */
+        .mission-content{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            z-index: 3;
+        }
+        
+        .mission-content figure{
+            width: 15vw;
+            height: 25vh;
+            
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .mission-content figcaption{
+            height: 50%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            text-align: center;
+        }
+        .mission-content h3{
+            margin:0px;
+        }
+        .mission-content p{
+            margin-bottom: 0;
+        }

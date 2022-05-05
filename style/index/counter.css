@@ -6,9 +6,22 @@
 }
 
 #counter{
+    position: absolute;
+    width: 1400px;
+    height: 200px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    background-color: var(--background);
+
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+
+    border-radius: 35px;
 }
 .counter-container{
     display: flex;

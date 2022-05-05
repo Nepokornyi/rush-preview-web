@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLNSK Shop</title>
+
+    <!--Global styles -->
+    <link rel="stylesheet" href="../../style/global/main.css">
+    <link rel="stylesheet" href="../../style/global/loader.css">
+    <link rel="stylesheet" href="../../style/global/portfolio-menu.css">
+    <link rel="stylesheet" href="../../style/global/main-menu.css">
+    <link rel="stylesheet" href="../../style/global/effects.css">
+    <link rel="stylesheet" href="../../style/global/footer.css">
+
+
+    <!-- site styles -->
+    <link rel="stylesheet" href="../../style/dlnsk-case/dlnsk-intro.css">
+    <link rel="stylesheet" href="../../style/dlnsk-case/mission.css">
+    <link rel="stylesheet" href="../../style/dlnsk-case/about.css">
+    <link rel="stylesheet" href="../../style/dlnsk-case/counter.css">
+    <link rel="stylesheet" href="../../style/dlnsk-case/description.css">
+    <link rel="stylesheet" href="../../style/dlnsk-case/conclusion.css">
+
+
+    <!-- libraries -->
+    <link rel="stylesheet" href="../../script/libraries/splide-4.0.1/dist/css/splide.min.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loading-container">
+        <img class='loader' src='../../media/assets/logo/logo_loading.gif' alt="logo animation">
+    </div>
+
+    <!-- Top Bar scrolling effect -->
+    <div id="fixed-scrolling"></div>
+
+    <!-- SlideTransition -->
+    <div id="portfolio-menu-transition-in"></div>
+    <div id="portfolio-menu-transition-out"></div>
+
+    <!-- portfolio-menu (hidden) -->
+    <section class="portfolio-menu hide">
+
+        <div class='header-menu'>
+            <div class="header-cases-wrapper">
+            <p><strong>ПОРТФОЛИ<span class="highlight">О</span></strong></p>
+            <a id="slide-out-button"><div class="all-cases-button svg-transition"></div></a>
+            </div>
+        </div>
+        
+        <div class="hidden-portfolio-menu-container">
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="../cases/casebart.html">Barbershop Bart</a></li>
+                        <li><a href="../cases/casedlnsk.html">DLNSK Shop</a></li>
+                        <li><a href="../cases/casebrowbar.html">The Brow Bar</a></li>
+                        <li><a href="../cases/caseccc.html">CCC</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- main-menu (hidden) -->
+    <section class="main-menu hide">
+        <div class="main-menu-container">
+            <div>
+                <nav>
+                    <ul>
+                        <li onclick="goToVideo()"><a id="video-link">Главная</a></li>
+                        <li onclick="goToSolution()"><a id="solution-link">Решение</a></li>
+                        <li onclick="goToProduct()"><a id="product-link">Продукт</a></li>
+                        <li onclick="goToResult()"><a id="result-link">Результат</a></li>
+                        <li onclick="goToContact()"><a id="contact-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- side bar -->
+    <div class="side-menu-container blur">
+        <aside>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../media/assets/logo.svg" alt=""></a>
+            </div>
+
+            <div class="hamburger-menu">
+                <a id="start-hamburger"><img src="../../media/assets/burger.svg" alt=""></a>
+                <a><div class="hamburger-anim hide" id="hamburger-anim"></div></a>   
+            </div>
+
+            <div class="aside-links">                
+                    <a href=""><div class="ig-link svg-transition"></div></a>
+                    <a href=""><div class="fb-link svg-transition"></div></a>
+                    <a href=""><div class="mail-link svg-transition"></div></a>
+            </div>
+            <!-- <div class="aside-equalizer">
+                <a><div class="equalizer-anim" id="equalizer-anim"></div></a>
+            </div> -->
+        </aside>
+    </div>
+
+    <!-- Arrow pointing down -->
+    <div class="arrow-down-container blur">
+        <a href="#solution-video">
+            <div class="arrow"></div>
+        </a>
+    </div>
+
+    <main id="main">
+        <!-- fixed top menu -->
+        <header class="blur">
+            <div class='header-menu'>
+                <div class="header-cases-wrapper">
+                <p><strong>ПОРТФОЛИ<span class="highlight">О</span></strong></p>
+                <a id="slide-in-button"><div class="all-cases-button svg-transition"></div></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Case Content -->
+        <div class="dlnsk-video-container blur">
+            <section id="dlnsk-video">
+                 <div class="video-container mask">
+                    <video autoplay loop muted>
+                        <source src="../../media/case/video/bart_showreel_cover.mp4" type="video/mp4">
+                        <source src="../../media/case/video/bart_showreel_cover.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div> 
+            </section>
+
+            <div class="dlnsk-fixed-container">
+                <div class="dlnsk-fixed-video">
+                <video autoplay loop muted>
+                    <source src="../../media/case/video/bart_showreel_cover.mp4" type="video/mp4">
+                    <source src="../../media/case/video/bart_showreel_cover.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Mission -->
+        <section id="case-mission">
+            <div class="mission-container">
+                <div class="mission-picture">
+                    <img src="https://picsum.photos/1920/1080" alt="">
+                </div>
+                <div class="mission-content">
+                    <figure>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <figcaption>
+                            <p>Тип кейса:</p>
+                            <h3>трансляция <br> прямого эфира</h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <figcaption>
+                            <p>Бюджет:</p>
+                            <h3>X</h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <figcaption>
+                            <p>Время:</p>
+                            <h3>7 дней подготовки <br> + 1 съемочный день</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Client -->
+        <section id="about-client-case">
+            <div class="left-client-case">
+                <h2>О клиенте:</h2>
+                <p>DLNSK — молодой чешский бренд, специализирующийся на удобных теплых спортивных костюмах 
+                    и ​​аксессуарах. Основная цель бренда — предлагать качественные, функциональные, а также стильные товары, которые прослужат долгие годы.
+                </p>
+            </div>
+            <div class="right-client-case">
+                    <img src="../../media/case/ccc/static/ccc_about.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Initial data -->
+        <!-- Counter -->
+        <section id="initial-data">
+            <!-- initial data -->
+            <div class="data-top-container">
+                <h2>Исходные данные:</h2>
+                <p>Основной поток клиентов через Инстаграм и по рекомендациям.
+                    Сайт малоэффективный / нерезультативный.</p>
+            </div>
+            <!-- counter -->
+            <div id="counter" class="counter reveal">
+                <div class="counter-container">
+                    <div class="counter-wrapper">
+                        <span>Lorem Ipsum</span>
+                        <div class="counter-target count-anim-1"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Ipsum Lorem</span>
+                        <div class="counter-target count-anim-2"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Dolor Sit Amet</span>
+                        <div class="counter-target count-anim-3"></div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <span>Dolor Sit Amet</span>
+                        <div class="counter-target count-anim-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Case Description -->
+        <section id="case-description">
+            <div class="case-description-text">
+                <article>
+                    <h2>Изначальная задача:</h2>
+                    <p>
+                        Настроить таргетированную рекламу для рынка Чехии и Словакии, 
+                        используя все ресурсы, которые уже есть.                        
+                        <br>
+                    </p>
+                    <h2>Решение:</h2>
+                    <p>
+                        —  Cобрать креативы для рекламы из контента, <br>
+                            который предоставил клиент <br>
+                        —  Запуск рекламы и контроль прогресса <br>
+                        —  Работа со статистикой результатов <br>
+                    </p>
+
+                    <h3>Дополнительные услуги:</h3>
+                    <p>
+                        Консультирование о том как улучшить и оптимизировать веб-сайт.
+                    </p>
+                </article>
+            </div>
+            <div class="case-solution-img">
+                <img src="../../media/case/ccc/static/ccc_location.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Video -->
+        <section>
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="../../media/case/ccc/video/horizontal_ccc_item_case.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+
+        <!-- Case Description -->
+        <section id="case-description">
+            <div class="case-description-text change-order">
+                <article>
+                    <h2>Основная задача на сегодняшний день:</h2>
+                    <p>
+                        Расширение на рынки Австрии и Германии.                      
+                        <br>
+                    </p>
+                    <h2>Решение:</h2>
+                    <p>
+                        —  Разработка новой маркетинговой стратегии <br>
+                        —  Создание нового качественного контента для: веб-сайта, 
+                              инстаграма и рекламных креативов <br>
+                        —  Продолжение работы с таргетированной рекламой <br>
+                    </p>
+                </article>
+            </div>
+            <div class="case-solution-img">
+                <img src="../../media/case/ccc/static/ccc_location.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Case Description -->
+        <section id="case-description">
+            <div class="case-description-content-text">
+                <article>
+                    <h2>Контент:</h2>
+                    <p>
+                        У нас есть все необходимое оборудование для любых видов съемок. Поэтому съемка DLNSK прошла в нашем фотоателье. За 1 съемочный день мы отсняли 6 спортивных костюмов в различных форматах. Таким образом мы сэкономили время клиента и не вышли за рамки установленного бюджета.                     
+                    </p>
+                </article>
+            </div>
+            <div class="case-solution-content-img">
+                <img src="../../media/case/ccc/static/ccc_location.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Conclusion -->
+        <section id="case-conclusion">
+            <div class="case-conclusion-text">
+                <h1>Важно:</h1>
+                <p>Весь контент, который предоставляет наша команда, лицензирован. Фото, видео, звуковые эффекты и музыка - все это можно использовать на любых платформах, не боясь блокировок, теневых банов и претензий авторов.</p>
+
+            </div>
+            <div class="splide carousel-conclusion" role="group">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><a href="./casedlnsk.html"><img src="../../media/assets/carousel/dlnsk.png" alt=""></a></li>
+                        <li class="splide__slide"><a href="./casebrowbar.html"><img src="../../media/assets/carousel/thebrowbar.png" alt=""></a></li>
+                        <li class="splide__slide"><a href="./caseccc.html"><img src="../../media/assets/carousel/ccc.png" alt=""></a></li>
+                        <li class="splide__slide"><a href="./casebart.html"><img src="../../media/assets/carousel/bart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- invisible block -->
+        <section id="footer-invisible"></section>
+
+    </main>
+
+
+
+    <!-- footer -->
+    <footer id="contact">
+        <div class="contact-bg blur">
+            <div class="contact-up-container">
+                <div class="contact-up">
+                    <h1>ХОТИТЕ УЗНАТЬ БОЛЬШЕ?</h2>
+                    <h1>СВЯЖИТЕСЬ С НАМИ!</h1>
+    
+                    <span class="contact-us-text">Напишите Нам</span>
+                    <form class="contact-form" action="https://formsubmit.co/60e63a4e06f15a4b5c1627e74236d4f6" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div>
+                            <input type="email" name='email' placeholder="example@email.com" class="email-input">
+                            <button class="email-button"><strong>ОТПРАВИТЬ</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-down-container">
+                <div class="contact-down">
+                    <ul>
+                        <li>
+                            <span><strong>АДРЕСС</strong></span>
+                            <span>Třebízského 9, 160 00 Vinohrady</span>
+                        </li>
+                        <li>
+                            <span><strong>ТЕЛЕФОН</strong></span>
+                            <span>+420 777 111 444</span>
+                        </li>
+                        <li>
+                            <span><strong>ПОЧТА</strong></span>
+                            <span>libofinspiration@gmail.com</span>
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../../script/libraries/splide-4.0.1/dist/js/splide.min.js"></script>
+
+    <script src="../../script/animations/case/dlnsk/dlnskEffects.js"></script>
+    <script src="../../script/animations/main/animations.js"></script>
+    <script src="../../script/loader/loader.js"></script>
+    <script src="../../script/animations/case/bart/sideMenu.js"></script>
+    <script src="../../script/contactForm/contact.js"></script>
+    
+    
+</body>
+</html>

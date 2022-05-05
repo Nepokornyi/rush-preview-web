@@ -1,0 +1,27 @@
+#case-conclusion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.case-conclusion-text{
+    width: 65vw;
+    height: 40vh;
+}
+    .case-conclusion-text p{
+        line-height: 1.6;
+        margin-left: 50px;
+        width: 800px;
+    }
+
+
+.carousel-conclusion{
+    width: 90vw;
+}
+
+    .carousel-conclusion img{
+        width: 350px;
+        height: 350px;
+    }

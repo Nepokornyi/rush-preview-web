@@ -142,9 +142,10 @@ buttonOut.addEventListener('click', transitionOut);
 // reveal animation
     //---------
     //Counter Anim start on reveal
-    const counterDiv = document.querySelectorAll('.counter-target');
+
 
 function reveal (){
+    const counterDiv = document.querySelectorAll('.counter-target');
     const reveals = document.querySelectorAll('.reveal');
     
 

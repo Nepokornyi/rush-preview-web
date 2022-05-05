@@ -1,11 +1,10 @@
 #about-client-case{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
     .left-client-case{
-        padding-left: 10vw;
         width: 40vw;
     }
         .left-client-case p{
@@ -16,7 +15,7 @@
         }
     
     .right-client-case{
-        width: 50vw;
+        width:40vw;
         height: 100vh;
     }
         .right-client-case img{

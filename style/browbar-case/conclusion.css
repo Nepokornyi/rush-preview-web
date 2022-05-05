@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
+
 
 .case-conclusion-text{
     width: 65vw;
@@ -16,12 +16,12 @@
         width: 800px;
     }
 
+
 .carousel-conclusion{
-    width: 80vw;
+    width: 90vw;
 }
 
-
     .carousel-conclusion img{
-        width: 300px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
     }
