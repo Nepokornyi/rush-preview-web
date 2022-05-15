@@ -18,8 +18,8 @@
         }
     
         .product-container-carousel {
-            width: 200px;
-            height: 400px;
+            width: 210px;
+            height: 450px;
             text-align: left;
             margin: 60px auto;
 
@@ -38,8 +38,8 @@
 
                 position: relative;
                 margin: 0;
-                width: 200px;
-                height: 400px;
+                width: 210px;
+                height: 450px;
 
                 -webkit-transition: 1s;
                 transition:1s;
@@ -52,14 +52,14 @@
                     -webkit-transition: 1s;
                     transition: 1s;
 
-                    width: 200px;
-                    height: 400px;
+                    width: 210px;
+                    height: 450px;
                 }
                 .leftPicture{
-                    left:180px;
+                    left:190px;
                 }
                 .rightPicture{
-                    left:-180px;
+                    left:-190px;
                 }
     
                 .leftPicture { -webkit-transform: rotateY(0deg) translateZ(400px) scale(.8); }

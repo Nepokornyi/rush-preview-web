@@ -1,7 +1,7 @@
 /* Case Section */
 #case-description{
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
     /* Left Text Container */
@@ -10,8 +10,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 75vw;
+        width: 70vw;
         height: 50vh;
+        order:2;
     }
     /* Article Styling */
     .case-description-text>article{
@@ -30,12 +31,14 @@
         align-items: center;
 
         width: 15vw;
+        margin-left: 15vw;
         min-width: 200px;
         height: 70vh;
         min-height: 440px;
 
 
         position:relative;
+        order:1;
     }
     /* Absolute position for picture */
     .sliderImage{
@@ -59,11 +62,13 @@
             min-height: 475px;
         }
     #firstPic{
-        background-image: url(https://picsum.photos/400/600);
+        background-image: url('../../media/case/bart/after.png');
+        background-size: 100%;
         z-index: 1;
     }
     #secondPic{
-        background-image: url(https://picsum.photos/400/601);
+        background-image: url('../../media/case/bart/before.png');
+        background-size: 227px;
         width: 50%;
         z-index: 1;
     }
@@ -95,7 +100,7 @@
     height: 10vh;
     min-height: 100px;
     margin-left: 1px;
-    background: black;
+    background: var(--special-red);
     cursor: pointer;
    }
 

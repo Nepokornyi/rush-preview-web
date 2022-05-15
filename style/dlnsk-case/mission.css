@@ -49,6 +49,19 @@
             align-items: center;
         }
 
+            .mission-content figure:nth-child(1) img{
+                width: 67px;
+                height: 76px;
+            }
+            .mission-content figure:nth-child(2) img{
+                width: 65px;
+                height: 83px;
+            }
+            .mission-content figure:nth-child(3) img{
+                width: 73px;
+                height: 73px;
+            }
+
 
         .mission-content figcaption{
             height: 50%;

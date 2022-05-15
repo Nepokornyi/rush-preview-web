@@ -3,3 +3,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.about-container img{
+    width: 815px;
+    height: 400px;
+}
