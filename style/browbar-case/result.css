@@ -1,7 +1,7 @@
 /* Case Section */
 #case-description{
     display: flex;
-    justify-items: center;
+    justify-content:center;
     align-items: center;
 }
     /* Left Text Container */
@@ -12,6 +12,10 @@
         align-items: center;
         width: 75vw;
         height: 50vh;
+
+
+
+        order:2;
     }
     /* Article Styling */
     .case-description-text>article{
@@ -36,6 +40,8 @@
 
 
         position:relative;
+
+        order:1;
     }
     /* Absolute position for picture */
     .sliderImage{
@@ -70,30 +76,46 @@
 
     /* Slider Styling */
     .slider {
-    position: absolute;
-    top:0;
-    left:0;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 100%;
-    background: rgba(242, 242, 242, 0);
-    outline: none;
-    margin: 0;
-    transition: all 0.2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-   }
-
-    .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 3px;
-    border-radius: 15px;
-    height: 10vh;
-    min-height: 100px;
-    background: black;
-    cursor: pointer;
-   }
+        position: absolute;
+        top:0;
+        left:0;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(242, 242, 242, 0);
+        outline: none;
+        margin: 0;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+       }
+    
+        .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 5px;
+        border-radius: 15px;
+        height: 10vh;
+        min-height: 100px;
+        margin-left: 1px;
+        background: var(--special-red);
+        cursor: pointer;
+       }
+    
+       /* disable range but being able to drag thumb */
+    
+       input[type=range]{
+        pointer-events: none;
+      }
+      input[type=range]::-webkit-slider-thumb{/*Webkit Browsers like Chrome and Safari*/
+        pointer-events: auto;
+      }
+      input[type=range]::-moz-range-thumb{/*Firefox*/
+        pointer-events: auto;
+      }
+      input[type=range]::-ms-thumb{/*Internet Explorer*/
+        pointer-events: auto;
+      }

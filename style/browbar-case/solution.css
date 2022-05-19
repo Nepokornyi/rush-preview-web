@@ -1,0 +1,25 @@
+#case-solution{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+    .left-client-solution{
+        width: 40vw;
+        margin-left: 10vw;
+    }
+        .left-client-solution p{
+            width: 400px;
+            margin: 0px 0px 0px 10px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    
+    .right-client-solution{
+        width:40vw;
+        height: 100vh;
+    }
+        .right-client-solution img{
+            width: 100%;
+            height: 100%;
+        }
