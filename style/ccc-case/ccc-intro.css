@@ -42,6 +42,18 @@
     height: 100vh;
 }
 
+    /* Video Description-text */
+    .video-description{
+        position: absolute;
+        top:80%;
+        left:50%;
+        transform: translate(-50%, -80%);
+
+        text-align: center;
+
+        line-height: 1.6;
+    }
+
 /* Global settings */
 
 .main-menu{

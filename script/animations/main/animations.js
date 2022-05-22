@@ -192,10 +192,21 @@ document.addEventListener('scroll', () =>{
 
 
 // ------------
+// arrow scroll down
+
+function arrowScrollDown(){
+    window.scrollBy(0, 0);
+    window.scrollBy(0, window.innerHeight);
+}
 
 
 // ------------
 
+
+// ------------
+
+
+// ------------
 
 
 

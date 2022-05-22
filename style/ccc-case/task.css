@@ -1,0 +1,27 @@
+#task-case{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+    .left-task-case{
+        width: 40vw;
+        order:2;
+    }
+        .left-task-case p{
+            width: 400px;
+            margin: 0px 0px 0px 35px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    
+    .right-task-case{
+        width:35vw;
+        height: 100vh;
+
+        order:1;
+    }
+        .right-task-case img{
+            width: 100%;
+            height: 100%;
+        }

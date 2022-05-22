@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../../style/ccc-case/mission.css">
     <link rel="stylesheet" href="../../style/ccc-case/about.css">
     <link rel="stylesheet" href="../../style/ccc-case/solution.css">
+    <link rel="stylesheet" href="../../style/ccc-case/realization.css">
+    <link rel="stylesheet" href="../../style/ccc-case/task.css">
     <link rel="stylesheet" href="../../style/ccc-case/result.css">
     <link rel="stylesheet" href="../../style/ccc-case/conclusion.css">
 
@@ -111,7 +113,7 @@
 
     <!-- Arrow pointing down -->
     <div class="arrow-down-container blur">
-        <a href="#case-mission">
+        <a onclick="arrowScrollDown()">
             <div class="arrow"></div>
         </a>
     </div>
@@ -137,6 +139,10 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
+                <div class="video-description">
+                    <p>Одна из крупнейших компаний по розничной торговле обувью <br>
+                    в Центральной Европе</p>
+                </div>
             </section>
 
             <div class="ccc-fixed-container">
@@ -154,25 +160,25 @@
         <section id="case-mission">
             <div class="mission-container">
                 <div class="mission-picture">
-                    <img src="../../media/case/bart/bart-static.png" alt="" class="bg-img">
+                    <img src="../../media/case/ccc/static/cover.png" alt="" class="bg-img">
                 </div>
                 <div class="mission-content">
                     <figure>
-                        <img src="../../media/case/bart/document.png" alt="">
+                        <img src="../../media/case/ccc/static/document.png" alt="">
                         <figcaption>
                             <p>Тип кейса:</p>
                             <h3>трансляция <br> прямого эфира</h3>
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="../../media/case/bart/money.png" alt="">
+                        <img src="../../media/case/ccc/static/money.png" alt="">
                         <figcaption>
                             <p>Бюджет:</p>
                             <h3>X</h3>
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="../../media/case/bart/time.png" alt="">
+                        <img src="../../media/case/ccc/static/time.png" alt="">
                         <figcaption>
                             <p>Время:</p>
                             <h3>7 дней подготовки <br> + 1 съемочный день</h3>
@@ -180,12 +186,11 @@
                     </figure>
                 </div>
             </div>
-    </section>
+        </section>
 
         <!-- About Client -->
         <section id="about-client-case">
             <div class="left-client-case">
-                <div class="client-case-logo">Лого</div>
                 <h2>О клиенте:</h2>
                 <p>CCC S.A. — одна из крупнейших компаний по розничной торговле обувью в Центральной Европе           с собственной фабрикой кожаной обуви, которая ежегодно продает около 40 миллионов пар обуви. На сегодняшний день ССС создает свои коллекции под несколькими брендами, ей принадлежат свыше 67 торговых марок (Lasocki, TM Sprandi, Jenny Fairy и др.)
                 </p>
@@ -195,9 +200,20 @@
             </div>
         </section>
 
+        <section id="task-case">
+            <div class="left-task-case">
+                <h2>Задача</h2>
+                <p>Перенести презентацию новых коллекций 4-х брендов ССС для представителей чешских медиа в условиях локдауна.
+                </p>
+            </div>
+            <div class="right-task-case">
+                    <img src="../../media/case/ccc/static/nick.png" alt="">
+            </div>
+        </section>
+
 
         <!-- Case Solution -->
-        <section id="case-solution">
+        <!-- <section id="case-solution">
             <div class="case-solution-container">
                 <video autoplay loop muted>
                     <source src="../../media/case/ccc/video/horizontal_ccc_cover.mp4" type="video/mp4">
@@ -237,8 +253,29 @@
 который устроил клиента.
                 </p>
             </div>  
-        </section>
+        </section> -->
 
+        <section id="realization">
+            <h2>РЕАЛИЗАЦИЯ</h2>
+            <div class="realization-container">
+                <div class="realization-points-wrapper">
+                    <div class="realization-img"><img src="../../media/case/ccc/static/1.png" alt=""></div>
+                    <div><h4>Выбор локации</h4></div>
+                </div>
+                <div class="realization-points-wrapper">
+                    <div><h4>Подготовка оборудования</h4></div>
+                    <div class="realization-img"><img src="../../media/case/ccc/static/2.png" alt=""></div>
+                </div>
+                <div class="realization-points-wrapper">
+                    <div class="realization-img"><img src="../../media/case/ccc/static/3.png" alt=""></div>
+                    <div><h4>Поминутный план трансляции</h4></div>
+                </div>
+                <div class="realization-points-wrapper">
+                    <div><h4>Дополнительный контент</h4></div>
+                    <div class="realization-img"><img src="../../media/case/ccc/static/4.png" alt=""></div>
+                </div>
+            </div>
+        </section>
 
         <!-- Case Description -->
         <section id="case-description">

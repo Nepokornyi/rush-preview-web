@@ -1,9 +1,10 @@
 body{
     margin:0;
     overflow-x: hidden;
+
 }
 *{
-
+    scroll-behavior: smooth;
     color:white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -11,6 +12,7 @@ body{
     --background:#1a191c;
     --special-red:#c10500;
     --light:#f9f9f9;
+    
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -51,7 +53,6 @@ strong{
 
 /* global section */
 section{
-    scroll-behavior: smooth;
     position: relative;
     z-index: 2;
 
