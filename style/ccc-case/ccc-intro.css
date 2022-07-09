@@ -3,8 +3,8 @@
 .mask{
     object-fit: cover;
 
-    -webkit-mask-image: url(../../media/case/bart/mask/bart-mask.svg);
-    mask-image: url(../../media/case/bart/mask/bart-mask.svg);
+    -webkit-mask-image: url('../../media/case/ccc/CCC-mask.png');
+    mask-image: url('../../media/case/ccc/CCC-mask.png');
 
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;

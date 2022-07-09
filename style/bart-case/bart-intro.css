@@ -3,23 +3,23 @@
 .mask{
     object-fit: cover;
 
-    -webkit-mask-image: url(../../media/case/bart/mask/bart-mask.svg);
-    mask-image: url(../../media/case/bart/mask/bart-mask.svg);
+    -webkit-mask-image: url('../../media/case/bart/BART-mask.png');
+    mask-image: url('../../media/case/bart/BART-mask.png');
 
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 
-    -webkit-mask-position:top;
-    mask-position:top;
+    -webkit-mask-position:center;
+    mask-position:center;
 }
 
 
 /* Adding invisible block for video */
-.invisible{
+/* .invisible{
     height: 100vh;
     opacity: 0;
     pointer-events: none;
-}
+} */
 
 /* Creating Container for Fixed video */
 .bart-video-container{
@@ -41,7 +41,7 @@
     left:0px; */
     width: 100vw;
     height: 200vh;
-    z-index: 3;
+    z-index: 2;
 }
 .bart-fixed-video{
     position: sticky;
@@ -49,6 +49,16 @@
     left:0px;
     width: 100vw;
     height: 100vh;
+}
+.video-description{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -80%);
+
+    text-align: center;
+
+    line-height: 1.6;
 }
 
 /* Global settings */

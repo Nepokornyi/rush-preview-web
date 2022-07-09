@@ -61,12 +61,12 @@
             min-height: 475px;
         }
     #firstPic{
-        background-image: url('../../media/case/bart/after.png');
+        background-image: url('../../media/case/bart/static/after.png');
         background-size: 100%;
         z-index: 1;
     }
     #secondPic{
-        background-image: url('../../media/case/bart/before.png');
+        background-image: url('../../media/case/bart/static/before.png');
         background-size: 227px;
         width: 50%;
         z-index: 1;
